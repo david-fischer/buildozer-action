@@ -1,6 +1,8 @@
 FROM kivy/buildozer:latest
 # See https://github.com/kivy/buildozer/blob/master/Dockerfile
 
+RUN sudo apt install autopoint
+
 # Buildozer will be installed in entrypoint.py
 # This is needed to install version specified by user
 RUN pip3 uninstall -y buildozer
